@@ -37,14 +37,15 @@ body {
 
   #userInput{
   display:inline-block;
-  margin-right:1%;
   font-family: Arial, Helvetica, sans-serif;
+  margin-right: 0px;
 } 
 
 input{
   border-width: 2px;
   font-size: large;
   text-align: center;
+  width: 40px;
 }
 
 #answer {
@@ -58,7 +59,9 @@ input{
   #output {
     text-align: center;
     padding-top:5%;
+    padding-left: 25%;
     padding-bottom:2%;
+    width: 50%;
   }
 
   .customButton {
@@ -79,4 +82,8 @@ input{
     margin: auto;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #answer {
+    width: 50%;
   }

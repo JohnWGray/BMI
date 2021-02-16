@@ -13,7 +13,7 @@
     <div id="wrapper">
         <div id="title">BMI Calculator</div>
 
-        <!------------------- Height ----------------------->
+        <!------------------ Height ----------------------->
         <div id="itemHeight">
             <div id="userInput">
                 <h3>Height in inches:</h3>
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <!------------------- Weight ------------------------->
+        <!------------------ Weight ------------------------->
         <div id="itemWeight">
             <div id="userInput">
                 <h3>Weight in lbs:</h3>
@@ -32,11 +32,11 @@
             </div>
         </div>
 
-        <!-------------------- Button ---------------------->
+        <!------------------ Button ---------------------->
         <div id="userButton"><button class="customButton" type="button" onclick="calcBMI()">Calculate</button></div>
-        <div id="output"> <input id="answer"> </div>
+        <div id="output"> <input id="answer" readonly> </div>
 
-        <!----------------- Guide ------------------------->
+        <!--------------- Guide ------------------------->
         <div id="guide">
             <p>Underweight: > 18.5</p>
             <p>Normal: 18.5 - 25</p>
@@ -44,7 +44,9 @@
             <p>Obese: 30+</p>
         </div>
     </div>
-    <!---------------- BMI Function ---------------->
+
+    <!-------------- BMI Function ---------------->
+
     <script>
         function calcBMI() {
             var a, b, c;
