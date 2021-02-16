@@ -48,21 +48,10 @@ input{
   width: 40px;
 }
 
-#answer {
-  font-weight: bolder;
-  font-size: large;
-}
   #userButton{
   text-align: center;
   padding-top:5%}
  
-  #output {
-    text-align: center;
-    padding-top:5%;
-    padding-left: 25%;
-    padding-bottom:2%;
-    width: 50%;
-  }
 
   .customButton {
   background-color: #ff0404;
@@ -77,13 +66,24 @@ input{
   cursor: pointer;
   }
 
+  #output {
+    text-align: center;
+    padding-top:5%;
+    padding-left: 25%;
+    padding-bottom:2%;
+    width: 50%;
+  }
+  
+  #answer {
+    font-weight: bolder;
+    font-size: large;
+    width: 50%;
+  }
+
+
   #guide {
     text-align: center;
     margin: auto;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-  }
-
-  #answer {
-    width: 50%;
   }
