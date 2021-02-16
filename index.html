@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Object Practice v1</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="title">BMI Calculator</div>
+
+        <!------------------- Height ----------------------->
+        <div id="itemHeight">
+            <div id="userInput">
+                <h3>Height in inches:</h3>
+            </div>
+            <div id="userInput"> <input id="height">
+            </div>
+        </div>
+
+        <!------------------- Weight ------------------------->
+        <div id="itemWeight">
+            <div id="userInput">
+                <h3>Weight in lbs:</h3>
+            </div>
+            <div id="userInput">
+                <input id="weight">
+            </div>
+        </div>
+
+        <!-------------------- Button ---------------------->
+        <div id="userButton"><button class="customButton" type="button" onclick="calcBMI()">Calculate</button></div>
+        <div id="output"> <input id="answer"> </div>
+
+        <!----------------- Guide ------------------------->
+        <div id="guide">
+            <p>Underweight: > 18.5</p>
+            <p>Normal: 18.5 - 25</p>
+            <p>Overweight: 25 - 30</p>
+            <p>Obese: 30+</p>
+        </div>
+    </div>
+    <!---------------- BMI Function ---------------->
+    <script>
+        function calcBMI() {
+            var a, b, c;
+            a = Number(document.getElementById("height").value);
+            b = Number(document.getElementById("weight").value);
+            c = (b / (a * a) * 703);
+            c = c.toFixed(1);
+            document.getElementById("answer").value = c;
+        }
+    </script>
+</body>
+
+</html>
